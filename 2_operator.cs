@@ -3,41 +3,41 @@ using System.Collections.Generic;
 using Debug = UnityEngine.Debug;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class 2_operator : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        //¿¬»êÀÚ
+        //ì—°ì‚°ì
 
-        string title1 = "¼öÇĞÀÚ";
-        string playername = "ÇÃ·¹ÀÌ¾î";
-        Debug.Log(title1+" "+playername); //ÇÁ¸°Æ® ½Ã +·Î ÀÌÀ» ¼ö ÀÖ´Ù.
+        string title1 = "ìˆ˜í•™ì";
+        string playername = "í”Œë ˆì´ì–´";
+        Debug.Log(title1+" "+playername); //í”„ë¦°íŠ¸ ì‹œ +ë¡œ ì´ì„ ìˆ˜ ìˆë‹¤.
 
             //bool
         int level = 103;
         bool isHundrad = level >= 100;
-        Debug.Log("100·¹º§ ÀÌ»ó ÀÔÀå °¡´ÉÇÕ´Ï´Ù. 100·¹º§ ÀÌ»óÀÔ´Ï±î? " + isHundrad);
+        Debug.Log("100ë ˆë²¨ ì´ìƒ ì…ì¥ ê°€ëŠ¥í•©ë‹ˆë‹¤. 100ë ˆë²¨ ì´ìƒì…ë‹ˆê¹Œ? " + isHundrad);
 
-        // ³í¸®¿¬»ê
+        // ë…¼ë¦¬ì—°ì‚°
             //AND
         int health = 35;
         int power = 50;
         bool isQueen = health >= 50 && power >= 50;
-        Debug.Log("¿©¿Õ ÄªÈ£¸¦ ¾òÀ¸·Á¸é Ã¼·Â 50 ÀÌ»ó, Èû 50 ÀÌ»óÀ» ÃæÁ·ÇØ¾ßÇÕ´Ï´Ù." + isQueen); //False
+        Debug.Log("ì—¬ì™• ì¹­í˜¸ë¥¼ ì–»ìœ¼ë ¤ë©´ ì²´ë ¥ 50 ì´ìƒ, í˜ 50 ì´ìƒì„ ì¶©ì¡±í•´ì•¼í•©ë‹ˆë‹¤." + isQueen); //False
 
         health = 60;
         power = 95;
         isQueen = health >= 50 && power >= 50;
-        Debug.Log("¿©¿Õ ÄªÈ£¸¦ ¾òÀ¸·Á¸é Ã¼·Â 50 ÀÌ»ó, Èû 50 ÀÌ»óÀ» ÃæÁ·ÇØ¾ßÇÕ´Ï´Ù." + isQueen); //True  
+        Debug.Log("ì—¬ì™• ì¹­í˜¸ë¥¼ ì–»ìœ¼ë ¤ë©´ ì²´ë ¥ 50 ì´ìƒ, í˜ 50 ì´ìƒì„ ì¶©ì¡±í•´ì•¼í•©ë‹ˆë‹¤." + isQueen); //True  
             //OR
         health = 9;
         power = 12;
-        bool isDanger = health < 20 || power < 15; //´Ü¶ôÈ¿°ú!!
-        Debug.Log("ÇÃ·¹ÀÌ¾î°¡ À§Çè »óÅÂÀÔ´Ï±î?" + isDanger);
+        bool isDanger = health < 20 || power < 15; //ë‹¨ë½íš¨ê³¼!!
+        Debug.Log("í”Œë ˆì´ì–´ê°€ ìœ„í—˜ ìƒíƒœì…ë‹ˆê¹Œ?" + isDanger);
 
-            //»ïÇ×¿¬»êÀÚ ( ÀÚ·áÇü º¯¼ö¸í = ºÒ ? trueÀÏ¶§ : falseÀÏ¶§; )     
-        string queen = isQueen ? "´ç½ÅÀº ¿©¿ÕÀÔ´Ï´Ù." : "¾ÆÁ÷ ¿©¿ÕÀÌ µÇ±â¿£ ºÎÁ·ÇÕ´Ï´Ù.";
+            //ì‚¼í•­ì—°ì‚°ì ( ìë£Œí˜• ë³€ìˆ˜ëª… = ë¶ˆ ? trueì¼ë•Œ : falseì¼ë•Œ; )     
+        string queen = isQueen ? "ë‹¹ì‹ ì€ ì—¬ì™•ì…ë‹ˆë‹¤." : "ì•„ì§ ì—¬ì™•ì´ ë˜ê¸°ì—” ë¶€ì¡±í•©ë‹ˆë‹¤.";
         Debug.Log(queen);
     }
 
